@@ -51,6 +51,7 @@ plt.xlim([-2, 8])
 plt.ylim([-4, 4])
 plt.savefig('images/phase-portrait.png')
 ```
+![](http://kitchingroup.cheme.cmu.edu/img/images/phase-portrait.png)
 Let us plot a few solutions on the vector field. We will consider the solutions where y1(0)=0, and values of y2(0) = [0 0.5 1 1.5 2 2.5], in otherwords we start the pendulum at an angle of zero, with some angular velocity.
 
 ```python
