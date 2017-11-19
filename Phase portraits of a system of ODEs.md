@@ -51,3 +51,21 @@ plt.xlim([-2, 8])
 plt.ylim([-4, 4])
 plt.savefig('images/phase-portrait.png')
 ```
+Let us plot a few solutions on the vector field. We will consider the solutions where y1(0)=0, and values of y2(0) = [0 0.5 1 1.5 2 2.5], in otherwords we start the pendulum at an angle of zero, with some angular velocity.
+
+```python
+from scipy.integrate import odeint
+
+for y20 in [0, 0.5, 1, 1.5, 2, 2.5]:
+    tspan = np.linspace(0, 50, 200)
+    y0 = [0.0, y20]
+    ys = odeint(f, y0, tspan)
+    plt.plot(ys[:,0], ys[:,1], 'b-') # path
+    plt.plot([ys[0,0]], [ys[0,1]], 'o') # start
+    plt.plot([ys[-1,0]], [ys[-1,1]], 's') # end
+    
+
+plt.xlim([-2, 8])
+plt.savefig('images/phase-portrait-2.png')
+plt.show()
+```
