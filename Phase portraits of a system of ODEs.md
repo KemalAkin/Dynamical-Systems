@@ -1,6 +1,6 @@
-**The following content is directly taken from [here](http://kitchingroup.cheme.cmu.edu/blog/2013/02/21/Phase-portraits-of-a-system-of-ODEs/). **
+**The following content is directly taken from [here](http://kitchingroup.cheme.cmu.edu/blog/2013/02/21/Phase-portraits-of-a-system-of-ODEs/).**
 
-An undamped pendulum with no driving force is described by
+An undamped pendulum with no driving force is described b
 
 ![](https://latex.codecogs.com/svg.latex?%24y%5E%5Cprime%20%5E%5Cprime%20&plus;%20%5Csin%28y%29%3D0%24)
 
